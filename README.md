@@ -8,8 +8,12 @@
 3) Open Agent, type “I feel off today” → see guidance + “see a clinician” rule.
 4) Visit Summary is auto-saved to History.
 
-> Decision support only — not medical advice. No data resale.
+## Team
 
+- **Tenzing Gurung** – AI/ML User Research & Integration  
+- **Deepan Wagle** – AI/ML User Research & Integration  
+- **Anuj Manandhar** – Community & Motivation (“Chief Cheerleader”)
+    
 ## Support
 Questions or issues? **Email:** [tenzinggrg05@gmail.com](mailto:tenzinggrg05@gmail.com)
 
