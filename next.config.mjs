@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Handle environment variables gracefully
+  env: {
+    CUSTOM_KEY: process.env.OPENROUTER_API_KEY,
+  },
 }
 
 export default nextConfig
