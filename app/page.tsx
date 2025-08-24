@@ -30,7 +30,7 @@ export default function HealthAIChat() {
     {
       id: "1",
       content:
-        "Hi there! I'm Clinic Copilot, your personal health assistant. I'm here to chat with you about your health and wellness journey. I can see you've been tracking some health metrics - that's fantastic! What's on your mind today? Are you feeling good, or is there something specific you'd like to talk about?",
+        "Hi there! I'm HEAL, your personal health assistant. I'm here to chat with you about your health and wellness journey. I can see you've been tracking some health metrics - that's fantastic! What's on your mind today? Are you feeling good, or is there something specific you'd like to talk about?",
       isUser: false,
       timestamp: new Date(),
     },
@@ -98,7 +98,7 @@ export default function HealthAIChat() {
             {
               id: "1",
               content:
-                "Hi there! I'm Clinic Copilot, your personal health assistant. I'm here to chat with you about your health and wellness journey. I can see you've been tracking some health metrics - that's fantastic! What's on your mind today? Are you feeling good, or is there something specific you'd like to talk about?",
+                "Hi there! I'm HEAL, your personal health assistant. I'm here to chat with you about your health and wellness journey. I can see you've been tracking some health metrics - that's fantastic! What's on your mind today? Are you feeling good, or is there something specific you'd like to talk about?",
               isUser: false,
               timestamp: new Date(),
             },

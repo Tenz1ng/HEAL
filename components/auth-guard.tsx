@@ -25,7 +25,7 @@ export function AuthGuard({ children }: AuthGuardProps) {
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center">
         <div className="flex flex-col items-center space-y-4">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
-          <p className="text-green-700 font-medium">Loading Clinic Copilot...</p>
+          <p className="text-green-700 font-medium">Loading HEAL...</p>
         </div>
       </div>
     )
