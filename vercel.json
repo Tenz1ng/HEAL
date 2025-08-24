@@ -2,16 +2,5 @@
   "buildCommand": "pnpm build",
   "outputDirectory": ".next",
   "installCommand": "pnpm install",
-  "framework": "nextjs",
-  "functions": {
-    "app/api/**/*.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
+  "framework": "nextjs"
 }

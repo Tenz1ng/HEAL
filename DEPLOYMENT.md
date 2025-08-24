@@ -23,7 +23,7 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret_here
 
 ### 3. **Configure Build Settings**
 In Vercel project settings:
-- **Framework Preset**: Next.js
+- **Framework Preset**: Next.js (should auto-detect)
 - **Build Command**: `pnpm build`
 - **Output Directory**: `.next`
 - **Install Command**: `pnpm install`
@@ -39,12 +39,14 @@ In Vercel project settings:
 1. **Missing Environment Variables**: Ensure all required env vars are set in Vercel
 2. **Build Failures**: Check build logs for compilation errors
 3. **API Route Issues**: Verify all API routes are properly configured
+4. **Invalid Vercel Configuration**: Ensure vercel.json is properly formatted
 
 ### Debug Steps:
 1. Check Vercel build logs for errors
 2. Verify environment variables are set correctly
 3. Test local build with `pnpm build`
 4. Ensure all dependencies are in `package.json`
+5. Verify vercel.json syntax is correct
 
 ## Windows-Specific Issues
 
@@ -57,6 +59,15 @@ If you encounter `EPERM: operation not permitted, symlink` errors on Windows:
 ### Build Warnings
 - The configuration now avoids deprecated Next.js options
 - All builds should complete without warnings on Windows
+
+## Vercel Configuration
+The project includes a `vercel.json` file with the correct configuration:
+- **Framework**: Next.js (auto-detected)
+- **Build Command**: `pnpm build`
+- **Output Directory**: `.next`
+- **Install Command**: `pnpm install`
+
+This configuration is optimized for Vercel deployment and should resolve the "Function Runtimes" error.
 
 ## Local Testing
 Before deploying, test locally:
@@ -82,3 +93,4 @@ If you continue to experience issues:
 3. Ensure your Next.js version is compatible with Vercel
 4. Check the [Vercel documentation](https://vercel.com/docs)
 5. For Windows-specific issues, ensure you're using the latest configuration files
+6. Verify vercel.json syntax is correct and doesn't contain invalid runtime specifications
