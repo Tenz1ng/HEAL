@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const systemPrompt = `You are Clinic Copilot, a friendly and conversational AI health assistant. You have a warm, approachable personality while maintaining professionalism. 
+    const systemPrompt = `You are HEAL, a friendly and conversational AI health assistant. You have a warm, approachable personality while maintaining professionalism. 
 
 Your conversation style:
 - Ask ONE focused question at a time to avoid overwhelming the user
@@ -66,7 +66,7 @@ Always remember: You provide general health information and wellness guidance, b
       headers: {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
-        "X-Title": "Clinic Copilot Health Assistant",
+        "X-Title": "HEAL Health Assistant",
       },
       body: JSON.stringify({
         model: "anthropic/claude-3.5-sonnet",

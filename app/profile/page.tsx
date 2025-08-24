@@ -1285,7 +1285,7 @@ export default function ProfilePage() {
                           <MessageSquare className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                           <h3 className="font-medium text-foreground mb-2">No Chat History Yet</h3>
                           <p className="text-sm text-muted-foreground mb-4">
-                            Start a conversation with Clinic Copilot to see your chat summaries here.
+                            Start a conversation with HEAL to see your chat summaries here.
                           </p>
                           <Link href="/">
                             <Button className="gap-2">
