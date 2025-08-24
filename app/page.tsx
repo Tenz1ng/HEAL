@@ -26,7 +26,15 @@ export default function HealthAIChat() {
   const { healthData, saveChatSummary } = useHealthData()
   const searchParams = useSearchParams()
 
-  const [messages, setMessages] = useState<Message[]>([])
+  const [messages, setMessages] = useState<Message[]>([
+    {
+      id: "1",
+      content:
+        "Hi there! I'm Clinic Copilot, your personal health assistant. I'm here to chat with you about your health and wellness journey. I can see you've been tracking some health metrics - that's fantastic! What's on your mind today? Are you feeling good, or is there something specific you'd like to talk about?",
+      isUser: false,
+      timestamp: new Date(),
+    },
+  ])
   const [inputValue, setInputValue] = useState("")
   const [isTyping, setIsTyping] = useState(false)
   const [chatSummarySaved, setChatSummarySaved] = useState(false)
@@ -86,7 +94,15 @@ export default function HealthAIChat() {
         setShowSaveSummary(false)
 
         setTimeout(() => {
-          setMessages([])
+          setMessages([
+            {
+              id: "1",
+              content:
+                "Hi there! I'm Clinic Copilot, your personal health assistant. I'm here to chat with you about your health and wellness journey. I can see you've been tracking some health metrics - that's fantastic! What's on your mind today? Are you feeling good, or is there something specific you'd like to talk about?",
+              isUser: false,
+              timestamp: new Date(),
+            },
+          ])
           setChatSummarySaved(false)
         }, 1000)
       }
