@@ -383,35 +383,7 @@ export default function ProfilePage() {
         />
 
         <div className="container mx-auto max-w-7xl p-8">
-          {/* User Profile Header */}
-          <div className="mb-8">
-            <Card className="border shadow-sm">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-4">
-                  {user?.picture ? (
-                    <img
-                      src={user.picture}
-                      alt={user.name || "User"}
-                      className="h-16 w-16 rounded-full object-cover"
-                    />
-                  ) : (
-                    <div className="h-16 w-16 rounded-full bg-primary flex items-center justify-center">
-                      <span className="text-2xl font-bold text-primary-foreground">
-                        {user?.name
-                          ?.split(" ")
-                          .map((n) => n[0])
-                          .join("") || "JD"}
-                      </span>
-                    </div>
-                  )}
-                  <div className="flex-1">
-                    <h1 className="text-2xl font-bold text-foreground">{user?.name || "John Doe"}</h1>
-                    <p className="text-muted-foreground">{user?.email || "john.doe@gmail.com"}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+
           
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="lg:col-span-1 space-y-8">
